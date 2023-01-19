@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Inter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: inherit;
+}
+
+body{
+  font-family: 'Inter';
+  background-color: white;
+  
+}
+
+main{
+  height: 2000px;
+  
+}
+
+header{
+  height: 600px;
+  background-image: url('hero_image.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.navbar{
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  height: 100px;
+  background-color: rgba(50.2, 50.2, 50.2, 0.7);
+  
+  
+  
+}
+
+.navbar li{
+
+}
+
+.navbar ul{
+  list-style-type: none;
+  display: inline-flex;
+  flex-wrap: no-wrap;
+  gap: 100px;
+  margin-right: 100px;
+  align-items: center;
+  
+}
+
+.navbar a{
+  text-decoration: none;
+  color: white;  
+}
+
+.cta{
+
+  background-color: rgb(161, 100, 31);
+  border-radius: 20px;
+  padding: 10px 30px 10px 30px;
+}
+
+.logo{
+  margin-right: auto;
+  margin-left: 120px;
+  font-family: 'Berkshire Swash';
+  color:white;
+  font-size: 47px;
+}
+/* Artificial Intelligence */
+.hero-text{
+  padding-left: 120px;
+  padding-top: 80px;
+}
+/* Artificial Intelligence */
+
+.hero-text{
+  font-family: 'Inter';
+}
+.hero-text h1{
+  font-weight: 700;
+  font-size: 101px;
+  color: white;
+}
+.hero-text p{
+  padding-top: 30px;
+  color:white;
+  font-size:28px;
+}
+.gold{
+  color: #9A6811;
+}
+
+
+footer{
+  height: 200px;
+  background-color: black;
+  color: white;
+}
+
+.section-1{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 400px;
+  padding-top: 80px;
+}
+.section-1 p{
+  margin-right: 120px;
+  width: 600px;
+}
+.section-2 p{
+  margin-left: 120px;
+  width: 600px;
+}
+div[class^="section"] p{
+  color: green;
+  font-size: 32px;
+  color: white;
+}
+.section-title{
+  font-size: 53px;
+  font-weight: 700;
+  color:white;
+}
+
+.brush-icon{
+  margin-left: 120px;
+}
+
+.section-2{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 400px;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+.info{
+  background-color: #393939;
+}
+
+.gallery{
+  background-color: #D9D9D9;
+  height: 1000px;
+}
+
+.gallery-title{
+  display: flex;
+  justify-content: center;
+  padding-top: 120px;
+  font-weight: 700;
+  font-size: 50px;
+  color: #393939;
+}
+
