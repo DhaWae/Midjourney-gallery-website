@@ -44,8 +44,9 @@ header{
   list-style-type: none;
   display: inline-flex;
   flex-wrap: no-wrap;
-  gap: 100px;
-  margin-right: 100px;
+  gap: 5vw;
+  margin-right: 9vw;
+  margin-left: 9vw;
   align-items: center;
   
 }
@@ -60,19 +61,22 @@ header{
   background-color: rgb(161, 100, 31);
   border-radius: 20px;
   padding: 10px 30px 10px 30px;
+  white-space: nowrap;
 }
 
 .logo{
   margin-right: auto;
-  margin-left: 120px;
+  margin-left: 9vw;
+  
   font-family: 'Berkshire Swash';
   color:white;
-  font-size: 47px;
+  font-size: calc(20px + 2vw);
 }
 /* Artificial Intelligence */
 .hero-text{
-  padding-left: 120px;
-  padding-top: 80px;
+  
+  margin-left: 9vw;
+  margin-top: 80px;
 }
 /* Artificial Intelligence */
 
@@ -156,3 +160,12 @@ div[class^="section"] p{
   color: #393939;
 }
 
+
+@media (max-width: 1024px){
+  .logo{
+    color: aquamarine;
+  }
+  .navbar ul{
+    visibility: hidden;
+  }
+}
