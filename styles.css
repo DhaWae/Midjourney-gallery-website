@@ -108,42 +108,51 @@ footer{
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 400px;
+  gap: 20vw;
   padding-top: 80px;
 }
 .section-1 p{
-  margin-right: 120px;
+  margin-right: 9vw;
   width: 600px;
 }
 .section-2 p{
-  margin-left: 120px;
+  margin-left: 9vw;
   width: 600px;
 }
 div[class^="section"] p{
-  color: green;
-  font-size: 32px;
+  font-size: 1.7vw;
+  font-size: calc(12px + 1vw);
   color: white;
 }
 .section-title{
-  font-size: 53px;
+  font-size: 150%;
   font-weight: 700;
   color:white;
+  white-space: nowrap;
 }
 
 .brush-icon{
-  margin-left: 120px;
+  margin-left: 9vw;
+  width: 20vw;
+  height: 20vw;
+}
+.chat-icon {
+  margin-right: 9vw;
+  width: 20vw;
+  height: 20vw;
 }
 
 .section-2{
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 400px;
-  padding-top: 80px;
+  gap: 20vw;
+  padding-top: 40px;
   padding-bottom: 80px;
 }
 .info{
   background-color: #393939;
+  
 }
 
 .gallery{
@@ -159,6 +168,7 @@ div[class^="section"] p{
   font-size: 50px;
   color: #393939;
 }
+
 
 
 @media (max-width: 1024px){
