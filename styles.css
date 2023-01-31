@@ -14,7 +14,7 @@ body{
 }
 
 main{
-  height: 2000px;
+  
   
 }
 
@@ -98,12 +98,6 @@ header{
 }
 
 
-footer{
-  height: 200px;
-  background-color: black;
-  color: white;
-}
-
 .section-1{
   display: flex;
   align-items: center;
@@ -157,7 +151,7 @@ div[class^="section"] p{
 
 .gallery{
   background-color: #D9D9D9;
-  height: 1000px;
+  
 }
 
 .gallery-title{
@@ -169,6 +163,122 @@ div[class^="section"] p{
   color: #393939;
 }
 
+.grid-images{
+  display: grid;
+  width: 100%;
+  height: 3000px;
+  background-color: #D9D9D9;
+  grid-template-areas: 
+  'one one two'
+  'three four two'
+  'five six seven'
+  'five eight eight'
+  'nine ten eleven'
+  'nine ten eleven'
+  'twelve twelve twelve';
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+  padding-top: 50px;
+  padding-left: 9vw;
+  padding-right: 9vw;
+}
+
+.image-1{
+  background-image: url("/hero_image.png");
+  grid-area:one;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.image-1 p{
+  display: flex;
+  align-items: flex-end;
+  color: white;
+  
+  padding-left: 2vw;
+  padding-bottom: 2vw;
+  height: 100%;
+  padding-top: auto;
+  font-style: italic;
+  font-size: 28px;
+}
+
+.image-2{
+  background-image: url("/gavin-zhao-nrOIwsMTbck-unsplash.jpg");
+  grid-area:two;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.image-3{
+  background-image: url("/gavin-zhao-nrOIwsMTbck-unsplash.jpg");
+  grid-area:three;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.image-4{
+  background-image: url("/gavin-zhao-nrOIwsMTbck-unsplash.jpg");
+  grid-area:four;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.image-5{
+  background-image: url("/gavin-zhao-nrOIwsMTbck-unsplash.jpg");
+  grid-area:five;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.image-6{
+  background-image: url("/gavin-zhao-nrOIwsMTbck-unsplash.jpg");
+  grid-area:six;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.image-7{
+  background-image: url("/gavin-zhao-nrOIwsMTbck-unsplash.jpg");
+  grid-area:seven;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.image-8{
+  background-image: url("/gavin-zhao-nrOIwsMTbck-unsplash.jpg");
+  grid-area:eight;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.image-9{
+  background-image: url("/gavin-zhao-nrOIwsMTbck-unsplash.jpg");
+  grid-area:nine;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.image-10{
+  background-image: url("/gavin-zhao-nrOIwsMTbck-unsplash.jpg");
+  grid-area:ten;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.image-11{
+  background-image: url("/gavin-zhao-nrOIwsMTbck-unsplash.jpg");
+  grid-area:eleven;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.image-12{
+  background-image: url("/gavin-zhao-nrOIwsMTbck-unsplash.jpg");
+  grid-area:twelve;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+span[class^="image-"]{
+  border-radius: 3vw;
+}
+footer{
+  height: 200px;
+  background-color: black;
+  color: white;
+  bottom: 0;
+}
 
 
 @media (max-width: 1024px){
@@ -179,3 +289,4 @@ div[class^="section"] p{
     visibility: hidden;
   }
 }
+
