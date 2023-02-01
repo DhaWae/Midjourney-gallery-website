@@ -34,8 +34,9 @@ header{
   align-items: center;
   justify-content: flex-end;
   
-  
+  position:fixed;
   height: 100px;
+  width: 100%;
   background-color: rgba(50.2, 50.2, 50.2, 0.7);
   
   
@@ -82,7 +83,7 @@ header{
 .hero-text{
   
   margin-left: 9vw;
-  margin-top: 80px;
+  padding-top: 80px;
 }
 /* Artificial Intelligence */
 
@@ -333,11 +334,10 @@ header {
   left: 100%;
   width: 100%;
   
-  min-width: 100vh;
-  
   z-index: 98;
   background-color: rgba(50.2, 50.2, 50.2, 0.7);
-  padding-top: 16px;
+  margin-top: 100px;
+  padding-top: 40px;
   transition: 0.4s;
   
 }
@@ -479,7 +479,7 @@ header {
     
   }
   .hero-text{
-    margin-top: 50px;
+    padding-top: 50px;
   }
   header{
     height: fit-content;
