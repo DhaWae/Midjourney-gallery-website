@@ -26,12 +26,15 @@ header{
   background-image: url('hero_image.png');
   background-repeat: no-repeat;
   background-size: cover;
+
 }
 
 .navbar{
   display: flex;
   align-items: center;
   justify-content: flex-end;
+  
+  
   height: 100px;
   background-color: rgba(50.2, 50.2, 50.2, 0.7);
   
@@ -258,11 +261,105 @@ span[class^="image-"]{
 span[class^="image-"]{
   border-radius: 3vw;
 }
+.grid-images{
+  padding-bottom: 5vw;
+}
 footer{
-  height: 200px;
-  background-color: black;
+  height: 300px;
+  background-color: #393939;
   color: white;
-  bottom: 0;
+  
+}
+.icons{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8vw;
+  fill:#D9D9D9;
+}
+
+.icons svg:hover{
+  fill: #9A6811;
+}
+.icons svg{
+  height: 100px;
+  width: 100px;
+}
+
+.hamburger{
+  position: relative;
+  display: block;
+  width: 35px;
+  cursor: pointer;
+  margin-right: 9vw;
+
+  appearance: none;
+  background:none;
+  outline: none;
+  border: none;
+}
+
+.hamburger .bar, .hamburger:after, .hamburger:before {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 5px;
+  background-color: white;
+  margin: 6px 0px;
+  transition: 0.4s;
+}
+
+.hamburger.is-active:before{
+  transform: rotate(-45deg) translate(-8px, 6px);
+}
+.hamburger.is-active:after{
+  transform: rotate(45deg) translate(-9px, -8px);
+}
+
+.hamburger.is-active .bar{
+  opacity: 0;
+}
+
+header {
+
+}
+.mobile-nav {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  left: 100%;
+  width: 100%;
+  
+  min-width: 100vh;
+  
+  z-index: 98;
+  background-color: rgba(50.2, 50.2, 50.2, 0.7);
+  padding-top: 16px;
+  transition: 0.4s;
+  
+}
+.mobile-nav.is-active{
+  left: 0;
+  display: flex;
+  flex-direction: column;
+}
+.mobile-nav a{
+  display: block;
+  width: 100%;
+  max-width: 300px;
+  text-align: center;
+  margin-bottom: 16px;
+  padding: 12px 16px;
+  background-color: grey;
+  color:white;
+  text-decoration: none;
+}
+
+.mobile-nav a:hover{
+  background-color: #9A6811;
 }
 
 @media (min-width: 1400px){
@@ -304,16 +401,19 @@ footer{
 
 @media (max-width: 1024px){
   .logo{
-    color: aquamarine;
+    
   }
   .navbar ul{
     display: none;
+  }
+  .icons{
+    gap: 6vw;
   }
 }
 
 @media (max-width: 768px){
   .logo{
-    color: green;
+    
   }
   .section-1,.section-2{
     flex-direction: column;
@@ -341,7 +441,69 @@ footer{
   .section-title{
     white-space: normal;
   }
+  .grid-images{
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(16, 60vw);
+    grid-template-areas: 
+    'one'
+    'two'
+    'two'
+    'three'
+    'four'
+    'five'
+    'five'
+    'six'
+    'seven'
+    'eleven'
+    'eight'
+    'nine'
+    'nine'
+    'ten'
+    'ten'
+    'twelve';
+    
+  }
+  .gallery-title h1{
+    font-size: 7vw;
+  }
+  .logo{
+    font-size: 8vw;
+  }
+  .hero-text h1{
+    font-size: 12vw;
+  }
+  .hero-text p{
+    font-size: 5vw;
+    padding-top: 20px;
+    padding-bottom: 50px;
+    
+  }
+  .hero-text{
+    margin-top: 50px;
+  }
+  header{
+    height: fit-content;
+  }
+  span[class^="image-"] p{
+    font-size: 6vw;
+  }
+  .icons svg{
+    height: 10vw;
+    width: 10vw;
+    gap: 2vw;
+  }
+  footer{
+    height: 20vw;
+  }
 
+}
 
+@media (min-width: 1024px) {
+  .mobile-nav{
+    display: none;
+  }
+  .hamburger{
+    display: none;
+  }
 }
 
