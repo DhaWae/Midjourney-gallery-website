@@ -22,7 +22,7 @@ html {
 }
 
 header{
-  height: 600px;
+  height: fit-content;
   background-image: url('hero_image.png');
   background-repeat: no-repeat;
   background-size: cover;
@@ -33,10 +33,9 @@ header{
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  
-  position:fixed;
-  height: 100px;
+  position: fixed;
   width: 100%;
+  height: 100px;
   background-color: rgba(50.2, 50.2, 50.2, 0.7);
   
   
@@ -79,21 +78,20 @@ header{
   color:white;
   font-size: calc(20px + 2vw);
 }
-/* Artificial Intelligence */
-.hero-text{
-  
-  margin-left: 9vw;
-  padding-top: 80px;
-}
-/* Artificial Intelligence */
 
 .hero-text{
-  font-family: 'Inter';
+  padding-top: 200px;
+  margin-left: 9vw;
+  padding-bottom: 100px;
+  
+  
 }
+
 .hero-text h1{
   font-weight: 700;
   font-size: 101px;
   color: white;
+  
 }
 .hero-text p{
   padding-top: 30px;
@@ -334,11 +332,12 @@ header {
   left: 100%;
   width: 100%;
   
+
+  margin-top: 100px;
+  padding-top: 16px;
   z-index: 98;
   background-color: rgba(50.2, 50.2, 50.2, 0.7);
-  margin-top: 100px;
-  padding-top: 40px;
-  transition: 0.4s;
+  transition: 0.8s;
   
 }
 .mobile-nav.is-active{
@@ -351,11 +350,12 @@ header {
   width: 100%;
   max-width: 300px;
   text-align: center;
-  margin-bottom: 16px;
-  padding: 12px 16px;
+  margin-bottom: 35px;
+  padding: 12px;
   background-color: grey;
   color:white;
   text-decoration: none;
+  border-radius: 5px;
 }
 
 .mobile-nav a:hover{
@@ -473,13 +473,14 @@ header {
     font-size: 12vw;
   }
   .hero-text p{
-    font-size: 5vw;
+    font-size: 3.8vw;
     padding-top: 20px;
-    padding-bottom: 50px;
+    
     
   }
   .hero-text{
-    padding-top: 50px;
+    padding-top: 150px;
+    padding-bottom: 50px;
   }
   header{
     height: fit-content;
