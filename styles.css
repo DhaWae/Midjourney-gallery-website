@@ -10,13 +10,8 @@
 body{
   font-family: 'Inter';
   background-color: white;
-  
 }
 
-main{
-  
-  
-}
 html {
   scroll-behavior: smooth;
 }
@@ -26,8 +21,13 @@ header{
   background-image: url('hero_image.png');
   background-repeat: no-repeat;
   background-size: cover;
-
 }
+
+/* Utility classes*/
+.gold {
+  color: #9A6811;
+}
+/* Utility classes*/
 
 .navbar{
   display: flex;
@@ -37,13 +37,6 @@ header{
   width: 100%;
   height: 100px;
   background-color: rgba(50.2, 50.2, 50.2, 0.7);
-  
-  
-  
-}
-
-.navbar li{
-
 }
 
 .navbar ul{
@@ -54,7 +47,6 @@ header{
   margin-right: 9vw;
   margin-left: 9vw;
   align-items: center;
-  
 }
 
 .navbar a{
@@ -63,7 +55,6 @@ header{
 }
 
 .cta{
-
   background-color: rgb(161, 100, 31);
   border-radius: 20px;
   padding: 10px 30px 10px 30px;
@@ -73,7 +64,6 @@ header{
 .logo{
   margin-right: auto;
   margin-left: 9vw;
-  
   font-family: 'Berkshire Swash';
   color:white;
   font-size: calc(20px + 2vw);
@@ -83,25 +73,18 @@ header{
   padding-top: 200px;
   margin-left: 9vw;
   padding-bottom: 100px;
-  
-  
 }
 
 .hero-text h1{
   font-weight: 700;
   font-size: 101px;
   color: white;
-  
 }
 .hero-text p{
   padding-top: 30px;
   color:white;
   font-size:28px;
 }
-.gold{
-  color: #9A6811;
-}
-
 
 .section-1{
   display: flex;
@@ -110,19 +93,31 @@ header{
   gap: 20vw;
   padding-top: 80px;
 }
+
 .section-1 p{
   margin-right: 9vw;
-  width: 600px;
 }
+
+.section-2{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20vw;
+  padding-top: 40px;
+  padding-bottom:80px;
+}
+
 .section-2 p{
   margin-left: 9vw;
-  width: 600px;
 }
+
 div[class^="section"] p{
   font-size: 1.7vw;
   font-size: calc(12px + 1vw);
   color: white;
+  width: 600px;
 }
+
 .section-title{
   font-size: 150%;
   font-weight: 700;
@@ -135,28 +130,20 @@ div[class^="section"] p{
   width: 20vw;
   height: 20vw;
 }
+
 .chat-icon {
   margin-right: 9vw;
   width: 20vw;
   height: 20vw;
 }
 
-.section-2{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 20vw;
-  padding-top: 40px;
-  padding-bottom:80px;
-}
+
 .info{
   background-color: #393939;
-  
 }
 
 .gallery{
   background-color: #D9D9D9;
-  
 }
 
 .gallery-title{
@@ -176,20 +163,11 @@ div[class^="section"] p{
   display: grid;
   width: 100%;
   background-color: #D9D9D9;
-  
-
   gap: 2vw;
   padding-top: 5vw;
   padding-left: 9vw;
   padding-right: 9vw;
-}
-
-.image-1{
-  background-image: url("gallery-images/The_Medievalist_An_endless_expanse_of_wind_blown_desert_dunes_u_1b08770a-7b38-4668-8adc-ddfa770d5bad.png");
-  grid-area:one;
-  background-repeat: no-repeat;
-  background-size: cover;
-
+  padding-bottom: 5vw;
 }
 
 span[class^="image-"] p{
@@ -209,8 +187,13 @@ span[class^="image-"]{
   background-position:center;
   background-repeat: no-repeat;
   background-size: cover;
+  border-radius: 3vw;
 }
 
+.image-1{
+  background-image: url("gallery-images/The_Medievalist_An_endless_expanse_of_wind_blown_desert_dunes_u_1b08770a-7b38-4668-8adc-ddfa770d5bad.png");
+  grid-area:one;
+}
 .image-2{
   background-image: url("gallery-images/MarVin_NFT_Character_full-body_goddess_of_afterlife_carved_from_14252714-bc7a-4206-8b84-b3ee4ffea1bc.png");
   grid-area:two;
@@ -254,21 +237,14 @@ span[class^="image-"]{
 .image-12{
   background-image: url("gallery-images/Triaphom_martian_landscape_46d9727d-48a5-4c6e-b9c7-ad0598e4117b.png");
   grid-area:twelve;
-
 }
 
-span[class^="image-"]{
-  border-radius: 3vw;
-}
-.grid-images{
-  padding-bottom: 5vw;
-}
 footer{
   height: 300px;
   background-color: #393939;
   color: white;
-  
 }
+
 .icons{
   width: 100%;
   height: 100%;
@@ -282,6 +258,7 @@ footer{
 .icons svg:hover{
   fill: #9A6811;
 }
+
 .icons svg{
   height: 100px;
   width: 100px;
@@ -316,14 +293,10 @@ footer{
 .hamburger.is-active:after{
   transform: rotate(45deg) translate(-9px, -8px);
 }
-
 .hamburger.is-active .bar{
   opacity: 0;
 }
 
-header {
-
-}
 .mobile-nav {
   position: fixed;
   display: flex;
@@ -331,20 +304,19 @@ header {
   flex-direction: column;
   left: 100%;
   width: 100%;
-  
-
   margin-top: 100px;
   padding-top: 16px;
   z-index: 98;
   background-color: rgba(50.2, 50.2, 50.2, 0.7);
   transition: 0.8s;
-  
 }
+
 .mobile-nav.is-active{
   left: 0;
   display: flex;
   flex-direction: column;
 }
+
 .mobile-nav a{
   display: block;
   width: 100%;
@@ -394,15 +366,13 @@ header {
     'seven seven'
     'twelve twelve';
   }
+  
   .image-7{
     background-position:center;
   }
 }
 
 @media (max-width: 1024px){
-  .logo{
-    
-  }
   .navbar ul{
     display: none;
   }
@@ -412,19 +382,18 @@ header {
 }
 
 @media (max-width: 768px){
-  .logo{
-    
-  }
   .section-1,.section-2{
     flex-direction: column;
     justify-content: center;
     gap: 0;
     padding-right: 0;
   }
+
   .section-2{
     flex-direction: column-reverse;
     /*haha, äntligen ett use case för detta*/
   }
+
   .section-1 p, .section-2 p {
     margin: 0;
     width: 100%;
@@ -438,9 +407,11 @@ header {
     height: 45vw;
     margin: 0;
   }
+
   .section-title{
     white-space: normal;
   }
+
   .grid-images{
     grid-template-columns: 1fr;
     grid-template-rows: repeat(16, 60vw);
@@ -463,46 +434,53 @@ header {
     'twelve';
     
   }
+
   .gallery-title h1{
     font-size: 7vw;
   }
+
   .logo{
     font-size: 8vw;
   }
+
   .hero-text h1{
     font-size: 12vw;
   }
+
   .hero-text p{
     font-size: 3.5vw;
     padding-top: 20px;
-    
-    
   }
+
   .hero-text{
     padding-top: 150px;
     padding-bottom: 50px;
   }
+
   header{
     height: fit-content;
   }
+
   span[class^="image-"] p{
     font-size: 6vw;
   }
+
   .icons svg{
     height: 10vw;
     width: 10vw;
     gap: 2vw;
   }
+
   footer{
     height: 20vw;
   }
-
 }
 
 @media (min-width: 1024px) {
   .mobile-nav{
     display: none;
   }
+
   .hamburger{
     display: none;
   }
