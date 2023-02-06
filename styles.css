@@ -396,11 +396,15 @@ footer{
 
   .section-1 p, .section-2 p {
     margin: 0;
-    width: 100%;
     text-align: center;
     padding-right: 10vw;
     padding-left: 10vw;
   }
+  
+  div[class^="section"] p{
+    width: 100%;
+  }
+  
 
   .brush-icon, .chat-icon{
     width: 45vw;
